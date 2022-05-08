@@ -1,0 +1,3 @@
+input,prediction,relation_prob,object_prob,image_id
+"['tile,behind,toilet', 'flower,on,wall', 'tile,with,flower', 'tile,with,flower', 'tile,with,flower', 'tile,with,flower', 'tile,with,flower', 'tile,with,flower', 'sink']","in,bathroom",0.6125973463058472,0.7211152911186218,2334741.jpg
+"['tile,behind,toilet', 'flower,on,wall', 'tile,with,flower', 'tile,with,flower', 'tile,with,flower', 'tile,with,flower', 'tile,with,flower', 'tile,with,flower', 'tile']","with,toilet",0.42480844259262085,0.8255653381347656,2334741.jpg
