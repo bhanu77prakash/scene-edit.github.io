@@ -1,5 +1,5 @@
 ---
-title: About
+title: Home
 ---
 
 This is the **Edition** template from [CloudCannon](http://cloudcannon.com/).
