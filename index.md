@@ -1,5 +1,5 @@
 ---
-title: The Scene-Edit Project Page
+title: About
 ---
 
 This is the **Edition** template from [CloudCannon](http://cloudcannon.com/).
