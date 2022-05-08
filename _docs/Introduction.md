@@ -1,6 +1,6 @@
 ---
 title: Introduction
-category: A
+category:
 order: 1
 ---
 

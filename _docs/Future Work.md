@@ -1,6 +1,6 @@
 ---
 title: Future Work
-category: Z
+category:
 order: 6
 ---
 

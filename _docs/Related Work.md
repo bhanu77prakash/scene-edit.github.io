@@ -1,6 +1,6 @@
 ---
 title: Related Work
-category: A
+category:
 order: 2
 ---
 

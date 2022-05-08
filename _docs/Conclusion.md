@@ -1,6 +1,6 @@
 ---
 title: Conclusion
-category: Z
+category:
 order: 5
 ---
 
