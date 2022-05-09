@@ -37,14 +37,19 @@ In this work, we would like to improve the quality of generated images i.e make 
 1. Auto completing the input scene graph with possible candidate objects and relations
 2. Inferring the explicit layout from expanded scene graph
 3. Generating images from the layout obtained from stage 2. 
+<center>
+<img src="../images/flow.png" alt="example" style="width:900px;"/>
+<br>
+</center>
 
 > Our Contributions
 
 In the proposed multi-stage pipeline, the following are the key contributions: 
-- An object encoding framework which automatically predicts the missing objects and relationships in a given scene graph
-- A candidate selection module to filter out several unwanted candidates for expansion
-- A multi stage framework where we explicitly generate the layout of the image before generating the acutal image, which is implicit in existing methods 
-- 
+- A large scale pre-trained scene encoding framework for learning the relationships between naturally occurring objects. 
+- A task specific finetuned scene encoding framework which automatically predicts the missing objects and relationships in a given scene graph.
+- A candidate selection module to filter out several unwanted candidates for expansion.
+- A multi stage framework where we explicitly generate the layout of the image before generating the acutal image, which is implicit in existing methods.
+- Finally, the end-to-end pipeline for autocompleting a scene and generating the scene image. 
 
 > Why does the idea make sense intuitively?
 
