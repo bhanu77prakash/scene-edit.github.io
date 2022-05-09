@@ -49,7 +49,11 @@ Our main hypothesis, which is also proven through our pre-training results, is t
 </center>
 where obj1 and obj2 are the two objects for which we want to estimate the pmi scores. Intuitively the metric measures the probability of both the objects occurring together as against to both of them appearing individually in the scenes. Here is the pmi scores chart plotted for the 150 objects of the VG-WSDN dataset. 
 <center>
-<img src="../../images/pmi_plot.png" alt="example" style="width:900px;"/>
+<img src="../../images/pmi_scores.png" alt="example" style="width:600px;"/>
 <br>
 </center>
-For better visualization, you can also download the image from [here](). The image is plotted in a high resolution, please zoom in to see the labels and the colors. In the picture lighter regions indicate that they have a high pmi score and darker regions indicate that they have a low pmi score.  
+For better visualization, you can also download the image from [here](https://github.com/bhanu77prakash/scene-edit.github.io/blob/main/images/pmi_plot.png). The image is plotted at a very high resolution, please download and zoom in to see the labels and the colors. In the picture lighter regions indicate that they have a high pmi score and darker regions indicate that they have a low pmi score. At a quick glance, we can conclude that the lighter regions are very sparse which also proves that the objects do tend to collocate with each other. 
+
+> Some examples from the pmi chart, the object *toilet* has a very high pmi score with objects *bathroom* and *sink* and has very low pmi score with objects *tower*, *giraffe*, *elephant* etc... 
+
+We use these pmi scores to filter the candidate objects. 
