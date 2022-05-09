@@ -56,4 +56,14 @@ For better visualization, you can also download the image from [here](https://gi
 
 > Some examples from the pmi chart, the object *toilet* has a very high pmi score with objects *bathroom* and *sink* and has very low pmi score with objects *tower*, *giraffe*, *elephant* etc... 
 
-We use these pmi scores to filter the candidate objects. 
+We use these pmi scores to filter the candidate objects. For a given candidate object, we compute its pmi score with every other object in the given scene graph and take the sum of the pmi scores. We use a threshold hyperparameter to filter out all the unnecessary candidates. 
+
+**Inference**
+We consider only the candidates that has pmi score higher than the aforementioned threshold and predict the relation and tail ends. As a further filtering step, we take the overall probability of the prediction as (due to the independence nature of our formulation). 
+<center>
+<img src="../../images/prob_eq.png" alt="example" style="width:500px;"/>
+<br>
+</center>
+and threshold with another hyperparameter which governs whether the score of the prediction is enough to add the triple to the scene or not. 
+
+Finally we add those triples that cross the threshold parameter back into the scene. 
