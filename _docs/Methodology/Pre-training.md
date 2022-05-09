@@ -34,4 +34,4 @@ For pre-training, we borrow the concepts from the [BERT](https://arxiv.org/pdf/1
 2. Else, we mask each of the elements randomly with probability p.
 On the output end, we try to predict the masked input elements. 
 
-The results of the pretraining method are reported in the [Pre-training results](/Results/Pre-training/) section. 
+The results of the pretraining method are reported in the [Pre-training results](../../Results/Pre-training/) section. 

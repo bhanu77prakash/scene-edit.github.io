@@ -46,7 +46,7 @@ In this work, we would like to improve the quality of generated images i.e make 
 
 In the proposed multi-stage pipeline, the following are the key contributions: 
 - A large scale pre-trained scene encoding framework for learning the relationships between naturally occurring objects. 
-- A task specific finetuned scene encoding framework which automatically predicts the missing objects and relationships in a given scene graph.
+- A task specific finetuned scene encoding framework for automatically predicting the missing objects and relationships in a given incomplete scene graph.
 - A candidate selection module to filter out several unwanted candidates for expansion.
 - A multi stage framework where we explicitly generate the layout of the image before generating the acutal image, which is implicit in existing methods.
 - Finally, the end-to-end pipeline for autocompleting a scene and generating the scene image. 
