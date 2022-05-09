@@ -3,6 +3,7 @@ title: Introduction
 category:
 order: 1
 ---
+> Our Idea and intuition behind it
 
 Generating images from Scene Graphs is a challenging image generation task, where one wishes to convert a structural information about a scene into an image. In an example provided in the work by Johnson et al. [[sg2im]](https://arxiv.org/pdf/1804.01622.pdf),  
 <center>
@@ -29,3 +30,23 @@ In almost all of these tasks, the inherent assumption is that the user provides 
 <img src="../images/boat_on_ocean.png" alt="example" style="width:240px;"/><br>
 </center>
 In the top 2 images, the image on left is provided a scene graph with the object *ocean* missing, and the image on the right is the one where *ocean* is explicitly specified. As we can see, the image generation fails to understand that the *boat* is an object that often collocates with a *water body* and hence needs to *autocomplete* the image with a water body. Instead, it generated *brown soil* and placed the boat on top of it. Similarly in the second row images, the image on the left has all the complete scene graph except the relation *boat, in, ocean*, and the right image has this relation explicitly specified. From these examples, we can deduce that the image generation techniques using scene graphs as inputs are sensitive to the completeness of the scene graph. 
+
+> Our Idea
+
+In this work, we would like to improve the quality of generated images i.e make the scene coherent and natural looking by automatically adding the missing objects and relationships between the objects. Towards this end, we propose a multi-stage pipeline consisting of the following steps
+1. Auto completing the input scene graph with possible candidate objects and relations
+2. Inferring the explicit layout from expanded scene graph
+3. Generating images from the layout obtained from stage 2. 
+
+> Our Contributions
+
+In the proposed multi-stage pipeline, the following are the key contributions: 
+- An object encoding framework which automatically predicts the missing objects and relationships in a given scene graph
+- A candidate selection module to filter out several unwanted candidates for expansion
+- A multi stage framework where we explicitly generate the layout of the image before generating the acutal image, which is implicit in existing methods 
+- 
+
+> Why does the idea make sense intuitively?
+
+In an example scene graph, say if we have a scene graph corresponding to two people camping in the forest. Say if the users want to add a node that has a boat near their tent, then just a simple addition of this new node would make the scene unnatural as there is no mention of any water body/coast in the current setting. However, based on the previous scene graphs we have seen, we can easily infer that all instances of boats also had a stream of river/ some other water body nearby, hence that should be added to the scene graph in addition to the boat. Now, when we use this updated scene graph for image generation, the output would most likely be more natural as the simple boat addition scenegraph. We are trying to use the information of what occurs in nature (which is captured by the human-created scene graphs we have) to guide the scene graph manipulation process and eventually the image generation flow. 
+
