@@ -25,7 +25,7 @@ Our architecture is reminiscent to the transformers architecture. The intuition 
 5. **Transformer Layers**  
     The next set of layers are the standard Transfomer encoder layers with multi-head attention modules. We do not modify any of these components because each the concept of learning an object representation by attending to the other objects in the scene is quite applicable in our scenario. 
 6. **Feed Forward Separator Layers**  
-    Since the input is fused from a triplet into a single representation, on the output side, we invert to generate triplet outputs.  
+    Since the input is fused from a triplet into a single representation, on the output side, we invert the fusion layers to generate triplet outputs.  
 
 > Pre-Training Procedure
 
@@ -34,4 +34,4 @@ For pre-training, we borrow the concepts from the [BERT](https://arxiv.org/pdf/1
 2. Else, we mask each of the elements randomly with probability p.
 On the output end, we try to predict the masked input elements. 
 
-The results of the pretraining method are reported in the [Pre-training results](../../Results/Pre-training/) section. 
+During pre-training, for better representation learning, we also concatenate the image embeddings of the scene image obtained by using pre-trained image encoders ([Resnet 18](https://pytorch.org/hub/pytorch_vision_resnet/) in our case) to the final transformer layer outputs. We apply this technique at random and other times we append a padding vector, because during fine-tuning and inferencing time, the image is not available to us up front. The results of the pretraining method are reported in the [Pre-training results](../../Results/Pre-training/) section. For this step, we use 80K images and their scene graphs from the Visual Genome dataset. The loss function is the standard categorical cross entropy loss applied at the masked positions. 
