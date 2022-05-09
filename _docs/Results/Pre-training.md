@@ -24,3 +24,5 @@ The accuracy values for the three heads are
 <img src="../../images/acc_curves.png" alt="objective" style="width:900px;"/>
 <br>
 </center>
+
+Please note that here the accuracy is for a n-class classification where for the objects the *n* value is 65334 and for relations the *n* value is 36381. Therefore the results are decent when compared to its counter part BERT in the MLM task (where the tokens are in similar range). It is the fine-tuning task where the actual accuracy values matter. These graphs show that the scene graph completion task is indeed possible. 
