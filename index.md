@@ -1,38 +1,9 @@
 ---
-title: Home
+title: About
 ---
+> Neural Synthesis of Natural Images From Semantically Guided Graphical Representations
 
-This is the **Edition** template from [CloudCannon](http://cloudcannon.com/).
-**Edition** is perfect for documenting your product, application or service.
-It's populated with example content to give you some ideas.
-
-ChatApp is a fictional chat application for sending messages and media to others.
-Teams and friend groups would use ChatApp to stay up to date if it existed.
-
-> [Sign up](http://example.com/signup) or learn more about ChatApp at [example.com](http://example.com/).
-
-### Getting Started
-
-Getting a message sent is quick and easy with ChatApp:
-
-1. Sign up for an account
-2. Add your friends from their email addresses
-3. Type a message or send a photo
-
-> Feel free to send us a message at [feedback@example.com](mailto:feedback@example.com) with your feedback.
-
-### Features
-
-Explore more of ChatApp by reading about our features:
-
-#### Media
-
-Send images, videos and other media to people. Sources include your computer, phone and Facebook.
-
-#### Contact Syncing
-
-Sync your contact list with your phone and/or Facebook contacts. Never lose your contacts between devices again!
-
-#### Devices
-
-ChatApp is available everywhere. Find out how to set it up on your all your devices.
+In this work, we address the novel problem of generating realistic images through scene autocompletion, in which a user can provide the overall concept of the scene with missing objects and relations. Our goal is to minimize the user effort by alleviating them from specifying each and every minute detail of a scene, which is traditionally captured through object relations in form of a graph. Towards this end we propose our model *Neural Synthesis of Natural Images From Semantically Guided Graphical Representations* , wherein we take an incomplete scene graph from the users, and through our multi-staged pipeline, we autocomplete the scene, infer the layout of the scene, and finally generate the image. In short, our goal is to Generate <span style="color:#2DAD0E">natural looking and coherent</span> images from given (<span style="color:#F86343">incomplete</span>) <span style="color:#4390F8">scene graph</span>. 
+<center>
+<img src="../images/pipeline.png" alt="pipeline" style="width:600px;"/>
+</center>
