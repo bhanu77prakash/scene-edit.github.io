@@ -26,3 +26,12 @@ Our architecture is reminiscent to the transformers architecture. The intuition 
     The next set of layers are the standard Transfomer encoder layers with multi-head attention modules. We do not modify any of these components because each the concept of learning an object representation by attending to the other objects in the scene is quite applicable in our scenario. 
 6. **Feed Forward Separator Layers**  
     Since the input is fused from a triplet into a single representation, on the output side, we invert to generate triplet outputs.  
+
+> Pre-Training Procedure
+
+For pre-training, we borrow the concepts from the [BERT](https://arxiv.org/pdf/1810.04805.pdf) model. Similar to the BERT, we perform a large-scale pre-training of the <b> *Masked Element Prediciton* (*MEP*) </b> task. Note that the Next Sentence Prediction task is not applicable here. Given an enoromous number of scene graphs, we randomly mask some of the *elements* of the scene graph and try to estimate the masked elements. Unlike the standard MLM task, we do not mask the entire input token because the head, relation and tail parts of the triplet are independent from each other i.e a relation can be replaced with another relation between the same head and tail objects. Therefore, we perform the following types of masking 
+1. We mask the entire triplet randomly with probability p. 
+2. Else, we mask each of the elements randomly with probability p.
+On the output end, we try to predict the masked input elements. 
+
+The results of the pretraining method are reported in the [Pre-training results](/Results/Pre-training/) section. 
