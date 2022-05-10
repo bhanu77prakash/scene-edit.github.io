@@ -17,7 +17,7 @@ We have reported the results on the following three experimental settings:
 - **Ground-truth SG**:
     In this setup, the layout and the image are generated using the ground truth scene graphs without any modifications. This setup acts as a baseline for comparing the other settings.
 
-The experiments are performed on the [VisualGenome-MDSN](../Datasets) datasets.
+The experiments are performed on the [VisualGenome-MDSN](../../Datasets) datasets.
 
 
 ### Layout Generation
