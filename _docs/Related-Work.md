@@ -10,23 +10,23 @@ In this project we focus on generating natural images from incomplete scene grap
 
 > Scene Graph to Image generation
 <center>
-<img src="../../images/sg_img.png" alt="example" style="width:500px;"/>
+<img src="../images/sg_img.png" alt="example" style="width:500px;"/>
 <br>
 </center>
 > Scene Graph to Layout generation
 <center>
-<img src="../../images/sg_lt.png" alt="example" style="width:500px;"/>
+<img src="../images/sg_lt.png" alt="example" style="width:500px;"/>
 <br>
 </center>
 
 > Layout to Image generation
 <center>
-<img src="../../images/lt_img.png" alt="example" style="width:500px;"/>
+<img src="../images/lt_img.png" alt="example" style="width:500px;"/>
 <br>
 </center>
 
 > Interactive Image generation
 <center>
-<img src="../../images/int_sg.png" alt="example" style="width:500px;"/>
+<img src="../images/int_sg.png" alt="example" style="width:500px;"/>
 <br>
 </center>
