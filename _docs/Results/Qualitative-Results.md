@@ -14,6 +14,7 @@ In each example, the top row corresponds to the missing scene graph and the bott
 - **Predicted SG**:
     In this setup, we predict the missing relations and objects using our proposed method. This completed scene graph is then used for subsequent layout and image generation.
 
+> Higher Resolution output images can be found [here](https://docs.google.com/presentation/d/1nIssxJSznZk_rvQmyX_a8fjxLDEFGAaoP8_rlZvwp-4/edit?usp=sharing)
 
 Qualitative Example 1   
 
