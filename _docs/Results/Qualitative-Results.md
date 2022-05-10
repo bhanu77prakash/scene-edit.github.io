@@ -1,7 +1,7 @@
 ---
 title: Layout Guided Generation - Qualitative Results
 category: Results
-order: 4
+order: 5
 ---
 
 In this page, we will look into some of the qualitiative results of the images generated from the proposed pipe line 
