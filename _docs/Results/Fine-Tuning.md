@@ -4,7 +4,7 @@ category: Results
 order: 2
 ---
 
-For the fine-tuning task, we take the subset VG-WSDN dataset which is constructed by taking 150 most frequent objects and 50 most frequent relations. As mentioned in the [methodology](../../Methodology/Fine-tuning) section, we have experimented with 2 setups for fine-tuning.
+For the fine-tuning task, we take the subset VG-MSDN dataset which is constructed by taking 150 most frequent objects and 50 most frequent relations. As mentioned in the [methodology](../../Methodology/Fine-tuning) section, we have experimented with 2 setups for fine-tuning.
 
 In **setup  a** (binary classification of candidate triple), the results obtained are as follows. 
 <center>
@@ -39,9 +39,16 @@ For the **setup b**, the results are as follows
         <th>Object Accuracy</th>
     </tr>
     <tr>
+        <td>Train</td>
+        <td> 0.6875 </td>
+        <td> 0.5625 </td>
+    </tr>
+    <tr>
         <td>Test</td>
         <td>59.15</td>
         <td>53.18</td>
     </tr>
 </table>
 </center>
+
+In this setup, as explained [earlier](../../Methodology/Fine-tuning), a candidate object is used to predict the missing relation and the tail object of the triple. Considering the momentous advantage obtained through the scene encoder model, we refrain from experimenting with the FNN, LSTM, and CNN models. We use the pre-trained scene encoder end-to-end as it is. Remeber that the pre-training method has the same objective of predicting the masked input elements. Since the objects and relations of the VG-MSDN dataset is a proper subset of the original VG data, we do not require any additional modifications to the architecture (unlike **setup a** where it is a binary classification setup). Again this is a 150-class classification for the tail object prediction and 50-class classification for the relation prediction. Therefore, the obtained are much better than a random prediction or majority prediction (~2.5% for object and ~30.9% for relation predictions). The qualitiative results obtained from this setup are shown in the Layout and Image generation results section. 
