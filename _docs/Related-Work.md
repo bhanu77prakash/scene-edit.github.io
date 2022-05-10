@@ -10,7 +10,7 @@ In this project we focus on generating natural images from incomplete scene grap
 
 > Scene Graph to Image generation
 <center>
-<img src="../../images/sg_img.png" alt="example" style="width:500px;"/>
+<img src="../images/sg_img.png" alt="example" style="width:500px;"/>
 <br>
 </center>
 
@@ -24,7 +24,7 @@ In the [results section](../Results/Fine-Tuning), we have provided some qualitat
 
 > Scene Graph to Layout generation
 <center>
-<img src="../../images/sg_lt.png" alt="example" style="width:500px;"/>
+<img src="../images/sg_lt.png" alt="example" style="width:500px;"/>
 <br>
 </center>
 
@@ -36,7 +36,7 @@ Scene graph to layout generation is a branch of work that tries to model the geo
 
 > Layout to Image generation
 <center>
-<img src="../../images/lt_img.png" alt="example" style="width:500px;"/>
+<img src="../images/lt_img.png" alt="example" style="width:500px;"/>
 <br>
 </center>
 
@@ -50,7 +50,7 @@ In our proposed multi-stage framework, we utilize [AttrLostGAN] as the module fo
 
 > Interactive Image generation
 <center>
-<img src="../../images/int_sg.png" alt="example" style="width:500px;"/>
+<img src="../images/int_sg.png" alt="example" style="width:500px;"/>
 <br>
 </center>
 
