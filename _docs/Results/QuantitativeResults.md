@@ -95,7 +95,7 @@ We evaluate the performance of the Image Generation module by calculating the [F
 
 
 | Experimental Setting | FID     |
-|----------------------|---------|
+|:----------------------:|:---------:|
 | Missing SG           | 139.517 |
 | Predicted SG         | 138.696 |
 | Ground-truth SG      | 138.646 |
