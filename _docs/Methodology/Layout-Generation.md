@@ -18,3 +18,4 @@ The architecture consists of three main modules: the object-relation predictor, 
 
 
 We adapt the code from the official GitHub [repo](https://github.com/davidhalladay/LayoutTransformer). However, the current implementation was not in a working state and had various missing pieces which we added to the code. For example, the code provided in the repository doesn't work directly for VG-MSDN pre-trained model. Our version of the code is added to the LayoutTransforer directory of the submitted GitHub repository.
+
