@@ -10,4 +10,6 @@ We have assumed that the missing triples in the scene would be mostly one or two
 
 While we have experimented with all stages of the pipeline, currently our stages are individually trained i.e independent from each other. However, we believe that if we train the models end-to-end, we can get additional benefits of choosing missing objects based on the layout possible in the provided image. For example it is possible that a *car* is not sufficient to put in a scene that is describing a *bus* depending on the details surrounding the *bus* object itself. While the scene autocomplete model is trying to complete the scene from a traffic point of view, the actual scene might be describing more about the details of a single bus parked on road.
 
+In the image generation part, minute changes to the input scene graph is causing lot of variation in the output. We also would like to delve deeper into the generation module and observe what are the critical factors that are governing the generation of parts of images. 
+
 Finally, while we have used the standard metrics of accuracy for understanding the results of autocompletion, IOU score for layout generation, and FID scores for image generation, we believe that we require a new metric to properly understand the benefits obtained by scene auto completion both in individual stages and the pipeline as a whole. 
