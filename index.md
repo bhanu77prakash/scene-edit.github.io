@@ -1,7 +1,7 @@
 ---
 title: About
 ---
-Auto-Scene is a project aimed at auto completing a given scene information towards generating natural looking images, and is part of a course project of 16824 Spring 2022 course.
+Auto-Scene is a project aimed at auto completing a given scene information towards generating natural looking images, and is part of a course project of 16824 Spring 2022 course. The code can be found at [https://github.com/bhanu77prakash/Auto-Scene-Code](https://github.com/bhanu77prakash/Auto-Scene-Code).
 
 > Title: Neural Synthesis of Natural Images From Semantically Guided Graphical Representations 
 
