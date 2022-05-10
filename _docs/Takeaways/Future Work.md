@@ -1,6 +1,6 @@
 ---
 title: Future Work
-category:
+category: Takeaways
 order: 6
 ---
 
