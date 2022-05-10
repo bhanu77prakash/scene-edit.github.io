@@ -102,4 +102,4 @@ We evaluate the performance of the Image Generation module by calculating the [F
 
 
 
-As can be seen the fid score (lower the better) for the Ground-truth SG is the better than other settings and the Missing SG fid score is the worst. Though the absolute difference between different fid scores are not significant, the generated images using the Predicted SGs look more natural and coherent when compared to the images generated using Missing SGs. The qualitative results are presented in the [next section](../Qualitative-Results) **TODO**
+As can be seen the fid score (lower the better) for the Ground-truth SG is the better than other settings and the Missing SG fid score is the worst. Though the absolute difference between different fid scores are not significant, the generated images using the Predicted SGs look more natural and coherent when compared to the images generated using Missing SGs. The qualitative results are presented in the [next section](../Qualitative-Results).
